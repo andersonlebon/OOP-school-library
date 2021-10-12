@@ -26,3 +26,8 @@ class Person
 
     private :is_of_age
 end
+
+p = Person.new(20)
+
+puts p.is_of_age
+# puts p.parent_permission
