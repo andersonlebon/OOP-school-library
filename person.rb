@@ -1,5 +1,4 @@
 class Person
-    
   attr_accessor :name, :age
   attr_reader :id
 
@@ -9,6 +8,7 @@ class Person
     @age = age
     @parent_permission = parent_permission
   end
+
   def of_age
     @age > 18
   end
