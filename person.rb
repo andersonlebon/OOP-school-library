@@ -11,7 +11,6 @@ class Person
     @parent_permission = parent_permission
     @correct = Corrector.new
     @rentals = []
-
   end
 
   def validate_name
@@ -29,7 +28,7 @@ class Person
       false
     end
   end
-  
+
   def add_rental(rental)
     @rentals << rental
   end
