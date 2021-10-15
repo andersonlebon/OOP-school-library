@@ -9,14 +9,17 @@ def say_welcome
 
 
 end
-welcome_message = ["| Hello welcome to OOP-SCHOOL-LIBRARY App |" , "| Please chose an option by entering a number as option |"]
+welcome_message = ["| Hello welcome to OOP-SCHOOL-LIBRARY App |" , "| Please choose an option by entering a number |"]
+options = ["1: List all books"]
+puts "\n"*3
+
 puts  "="* 43
 puts "|" + " "* 41 + "|"
 puts welcome_message[0].upcase
 puts "|" + " "* 41 + "|"
-puts  "="* 43, "\n\n\n"
-puts "|"
+puts  "="* 43
+puts "\n"*3
 
-puts  "-"*57
+puts  "-"*49
 puts welcome_message[1]
-puts  "-"* 57
+puts  "-"* 49
