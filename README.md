@@ -15,7 +15,7 @@ To get a local copy up and running follow these simple example steps.
 git clone git@github.com:andersonlebon/OOP-school-library.git
 ```
 - ``` cd OOP-school-library ```
-- Then run ```ruby main.rb to start the aplication```
+- Then run ```ruby main.rb``` to start the aplication
 
 ## Author
 
