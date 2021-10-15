@@ -1,30 +1,30 @@
-require './person.rb'
-require './classroom.rb'
-require './book.rb'
-require './student.rb'
-require './teacher.rb'
-
+require './person'
+require './classroom'
+require './book'
+require './student'
+require './teacher'
 
 def say_welcome
-    welcome_message = ["| Hello welcome to OOP-SCHOOL-LIBRARY App |" , "| Please choose an option by entering a number |"]
-    options = ["1:  -  List all books", "2:  -  List all people", "3:  -  Create a person (teacher or student)", "4:  -  Create a book", "5:  -  Create a rental", "6:  -  List all rentals for a given person id"]
-    puts "\n"*3
+  welcome_message = ['| Hello welcome to OOP-SCHOOL-LIBRARY App |',
+                     '| Please choose an option by entering a number |']
+  options = ['1:  -  List all books', '2:  -  List all people', '3:  -  Create a person (teacher or student)',
+             '4:  -  Create a book', '5:  -  Create a rental', '6:  -  List all rentals for a given person id']
+  puts "\n" * 3
 
-    puts  "="* 43
-    puts "|" + " "* 41 + "|"
-    puts welcome_message[0].upcase
-    puts "|" + " "* 41 + "|"
-    puts  "="* 43
-    puts "\n"*3
+  puts '=' * 43
+  puts "|#{' ' * 41}|"
+  puts welcome_message[0].upcase
+  puts "|#{' ' * 41}|"
+  puts '=' * 43
+  puts "\n" * 3
 
-    puts  "-"*49
-    puts welcome_message[1]
-    puts  "-"* 49
-    puts "\n"*2
+  puts '-' * 49
+  puts welcome_message[1]
+  puts '-' * 49
+  puts "\n" * 2
 
-    puts options
+  puts options
 end
-
 
 class Storage
   attr_accessor :books, :persons, :rentals
@@ -60,7 +60,7 @@ class Storage
   # rubocop:enable Metrics/CyclomaticComplexity
 
   def show_options
-    say_welcome()
+    say_welcome
     gets.chomp.to_i
   end
 
@@ -163,10 +163,9 @@ class Storage
 end
 
 def main
-
   puts
   library = Storage.new
   library.run
 end
 
-main()
+main
