@@ -41,7 +41,7 @@ def selected_option(option, store)
     when "1"
         puts store.books
     when "2"
-        2
+        puts store.peolpe
     when "3"
        3 
     else 
