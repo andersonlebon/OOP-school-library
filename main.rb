@@ -5,10 +5,22 @@ require './student.rb'
 require './teacher.rb'
 
 
+
+class Storage
+    attr_reader : books
+    def initialize
+        @books = []
+        @peolpe = []       
+    end
+end
 def say_welcome
 
 
+
 end
+
+
+
 welcome_message = ["| Hello welcome to OOP-SCHOOL-LIBRARY App |" , "| Please choose an option by entering a number |"]
 options = ["1:  -  List all books", "2:  -  List all people", "3:  -  Create a person (teacher or student)", "4:  -  Create a book", "5:  -  Create a rental", "6:  -  List all rentals for a given person id"]
 puts "\n"*3
