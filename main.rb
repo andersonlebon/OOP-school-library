@@ -162,4 +162,11 @@ class Storage
   end
 end
 
+def main
 
+  puts
+  library = Storage.new
+  library.run
+end
+
+main()
