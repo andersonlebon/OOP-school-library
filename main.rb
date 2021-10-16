@@ -1,8 +1,9 @@
-# require './person'
+require './person'
 require './classroom'
 require './book'
 require './student'
 require './teacher'
+require './rental'
 
 def say_welcome
   welcome_message = ['| Hello welcome to OOP-SCHOOL-LIBRARY App |',
@@ -81,6 +82,7 @@ class Storage
     id = gets.chomp.to_i
     puts 'Rentals:'
     selected_rental = @rentals.select { |rental| rental.person.id == id }
+    # puts @rentals.book
     selected_rental.each do |s_rental|
       puts "Date: '#{s_rental.date}', Book: #{s_rental.book.title} , by: #{s_rental.book.author}"
     end
